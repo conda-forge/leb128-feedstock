@@ -1,4 +1,4 @@
-{% set version = "1.0.5" %}
+{% set version = "1.0.6" %}
 
 package:
   name: leb128
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/l/leb128/leb128-{{ version }}.tar.gz
-  sha256: cb16001f0087b499ab51f6b8e3ef8377ba14a0c9990db85316dedf0ad4a54e80
+  sha256: d29e3c80743e910f1b5d57e3e05b5c83348115bad65086f4689c1946680e96cd
 
 build:
   noarch: python
