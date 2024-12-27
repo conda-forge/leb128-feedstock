@@ -5,20 +5,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/l/leb128/leb128-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/l/leb128/leb128-{{ version }}.tar.gz
   sha256: 3a52dca242f93f87a3d766380a93a3fad53ef4044f03018d21705d3b2d9021ee
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -27,6 +27,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/mohanson/leb128
