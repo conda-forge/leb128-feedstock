@@ -3,11 +3,13 @@ About leb128-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/leb128-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/mohanson/leb128
+Home: https://pypi.org/project/leb128
 
 Package license: MIT
 
 Summary: LEB128(Little Endian Base 128)
+
+Development: https://github.com/mohanson/leb128
 
 Current build status
 ====================
