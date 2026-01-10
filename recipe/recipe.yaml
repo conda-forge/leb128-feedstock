@@ -36,7 +36,7 @@ tests:
         - ${{ python_check_max }}.*
   - files:
       source:
-        - tests/
+        - test/
     requirements:
       run:
         - python ${{ python_min }}.*
